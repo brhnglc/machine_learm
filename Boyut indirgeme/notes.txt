@@ -1,0 +1,28 @@
+-------------------------------
+Boyut indirgeme 
+-------------------------------
+
+1-)PCA(Principal Component Analysis)(birincil bileşen analizi)
+
+*gürültü filtreleme
+*görselleştirme
+*marjinal verilere karşı
+*öznitelik çıkarımı/eleme/dönüştürme
+
+#veri kaybı yaşanabilir 
+
+
+eigen(öz)value
+eigen vector(öz yöney)
+
+2-)LDA(Linear Discriminant Analysis)(Doğrusal Ayrım Analizi)
+
+*pca benzeri boyut dönüştürme ve indirgeme yapar
+
+*pca gözetimsiz lda gözetimli
+
+*sınıflar arasında ayrımı maximize eder
+
+*pca sınıfları ignorlayıp başlıyor 
+
+

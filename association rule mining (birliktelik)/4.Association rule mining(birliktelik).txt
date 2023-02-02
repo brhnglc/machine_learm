@@ -1,0 +1,36 @@
+--------------------------------Birliktelik kural çıkarımı(association rule mining)
+--------------------------------
+
+1-)apriori
+*bunu alanlar,bunu da aldı.Bunu izliyenler bunu da izledi ...
+*bebek bezi biraz olayı
+*ilişkisel mi nedensellik mi
+
+correlation(ilişkisel) is not causation(nedensellik)
+
+*bilgisayar nedene bakmaz ilişki varsa tamamdır
+
+köpkek balıgı - dondumra (ilişki)
+
+yaz aylarında sıcaklık artması (neden)
+
+transaction = işlem
+
+destek(support) = a varlıgını içeren eylem/toplam eylem
+
+confidence(a->b) = a ve b varlıgını içeren eylemler/a varlıgını içeren eylem
+
+lift(a->b) = confidence(a->b)/support(b)
+
+1>lift olumsuz etkilemiş
+
+lift>1 olumlu etkilemiş alan onuda almış
+ 
+2.eclat(equivalence class transformation)
+
+eclat:dept first search
+aprori:breadth first search
+
+*-* eclat daha kısa sürer ama büyük veride sıçar aproriye göre
+
+eclat ürün ürün oldugu için kısa olanda hızlıca bitiriyor işlem bazlı

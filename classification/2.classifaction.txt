@@ -1,0 +1,78 @@
+-------classification-----------
+
+a-)logistic function
+#sigmaid,step function
+
+karmaşıklık matrisi(r^2 gibi sınıflandırma için sanırsam)
+#diagon(köşegen) doğru sayısını verir
+
+b-)knn(k nearest neighborhood)
+# en yakın komşuların uzaklıklarından hangisin yakınsa onun özelligini kabul gösteriyor
+# k = istenilen değer alınabilinir eğer k çift seçilip komşu sayısında eşitlik olursa yakınlıklardan sonuca gidilir
+#lazy leraning bu
+#öbür varyasyon eager(hevesli) learning ise train setinden kendi setlerini oluşturup traini unutp test verilerini kendi setinine göre predict ediyor
+#knn eager leraning region(bölge) çıkartıyor
+#distance = euclidean(öklid),minkowski
+
+c-) support vector regression(SVR)
+# otobanın en geniş yollarını hedefliyor(margin width en geniş tutmak)
+#predictin aksine burada içeriye hiç veri tutmamak hedefleniyor
+#birebir sınıflandırma yapar sonra öbürküyle yaparak devam eder
+
+
+**hard margin içine veri kabul etmeye
+**soft margin içine veri kabul eden
+
+***SVM for non-linear 
+#boyut arttırma ile (2d->3d)
+#örn:orta noktayı baz alıp oraya olan uzaklıklarını z eksenine verirsek
+#non-linear boundary(sınır) çizmiş oluyorsun
+
+*** çoklu kernelde kullanılabilir
+
+d-) naif Bayes(koşullu olasılık)(Conditional Probability)
+#bayes teorimine dayanıyor
+#olasılık ile
+#lazy learning veriye göre ögrenir
+
+#gaussian naive bayes(tahmin edilicek ondalıklı olabiliyorsa),multinomial naive baye(int sayılar nomialler için),bernoulli naive bayes(0 ve 1 gibi nomial için)
+
+
+majority vote(çoğunluk oyu)
+
+e-) decision tree
+-ID3 quinlanın algoritması
+
+-information gain (enformasyon kazanımı)
+
+*gain(x) = info(genel)-info(x) 
+x özelliginin dallara ne oranla veri gönderdigi eger hepsi bir dala gidiyorsa gereksiz bir soru ama 2 ye ayrılıyorsa çok güzel veri ikiye bölündü 
+
+en cok gain puanı olan feature ağacın başına yazılır
+
+gini  log2 yok
+entropy log2 var 
+
+f-)random forest
+birden fazla decisin treeye aynı datasetin belli kısımlarını vererk farklı agaclar elde edip oylamaların sonuncunda sınıfırlandırma yapamk
+
+confusion matrix
+
+accuracy= doğru tahminler/tümü     
+error rate = 1-accuracy
+
+
+accuracy paradox
+*zeroR algoritması verideki en çok olan değeri her tahminde döndürür en aptal algoritma
+
+
+ROC(Receiver Operatin Characteristic)egrisi
+
+true positif rate=
+true tahminler/tüm positif
+
+false positif rate=
+false tahminler/tüm false 
+
+AUC(Area Under Curve)
+

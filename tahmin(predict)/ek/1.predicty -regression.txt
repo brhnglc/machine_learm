@@ -1,0 +1,83 @@
+tahmin(prediction) eksik veri gibi
+
+öngörü(forecasting)gelecek tahmini
+
+
+
+
+kukla değişken(dummy variable)
+ 
+h0 = null hypothesis boş hipotez
+h1= alternartif hipotez
+p-value =olasılık değeri (genelde 0.05alınır)
+
+regression(aralarında bağıntı) örneklem(örnek)
+
+correlation= bağıntı
+
+significance level(SL) (genelde 0.05)
+
+Değişken seçme
+ a-)Bütün değişkenleri dahil etme
+
+b-)geriye dopru eleme(backward elimination) sile sile sl>pv
+
+c-)ileri seçim(forward selection) ekliye ekliye sl>pv
+
+d-)iki yönlü eleme(bidirectional elimination) sile sile ekliye ekliye
+
+e-)Skor karşılaştırması
+    başarı kriteri log(2^n) 
+    bruteforce şekli
+
+
+
+margin width(otoyol genişligi gibi)(pay ,kenar aralıgı)
+
+
+Destek Vektör Regresyonu
+(support vector regression)
+-scale kullanmak lazım çünkü marjinal veriler yani aykırılar için dayanıklı olmayan bir model
+
+sınıflandırmada=>en geniş otoban seçme
+
+tahmin=>otoban içine en çok nokta alma min margin ile
+ 
+RBF(Radial basis function)
+
+karar ağacı(decision tree)
+
+
+rassal ağaçlar(random forest)
+-verinin altkümeler halinde decision treelere vererek bir den fazla decision tree kullanımı
+
+ensemble learnin(kollektif ögrenme)(majority vote çoğunlugun oyu)
+-bir den fazla model kullanılarak
+
+R-Square(r-kare yöntemi)
+
+hata karaleri toplamı
+(tahmin gerçek grafiginin uzaklıklarının karesi şekli)+ - gibi sonuçlar olmasın diye kareleri
+a=(gerçek.i-tahmin.i)^2
+
+
+ortalama farkların toplamı
+b=(gerçek.i-tahmin.ort)^2
+#olabilicek en kötü değeri veriyor
+
+(R-Square)^2=1-hkt/oft
+
+result=1-(a/b)
+mükkemel durum = 1
+çok kötü durum <= 0
+
+Adjusted R-Square(düzeltilmiş R^2)
+
+R-square yeni değişkenler ekliyince notunu düşürmüyor
+
+
+AR^2=1-(1-R^2)*(n-1)/(n-p-1)
+n=kaç elaman
+p=kaç değişken 
+
+sklearn.metrics.r2_score

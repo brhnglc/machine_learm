@@ -1,0 +1,21 @@
+--------------------------------
+NLP(Naturel language processing)
+(doğal dil işleme)
+
+-hedefler
+*NLU(natural language understanging)anlamak
+
+*NLG(natural language generation)oluşturmak
+
+-yaklaşımlar
+*lingusitik(dilbilim) - insanlar gibi #yavaş ama daha iyi
+
+*istatistiksel
+
+*hibrit
+
+preprocessing = veri ön işleme
+
+feature enginerring = öznitelik çıkarımı
+
+stop words = tek başına anlam içermeyen

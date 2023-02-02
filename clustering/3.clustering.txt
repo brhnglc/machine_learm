@@ -1,0 +1,96 @@
+--------------------------------
+-Kümeleme/Bölütleme(clustering)-
+*unsupervised
+--------------------------------
+*segmentasyon müşterileri küçük verilere bölmek
+*demografik =yaş, cinsiyet, gelir düzeyi, meslek, eğitim
+
+
+1-)k-means(k-ortalama)
+*kaç küme kullnıcalgını kullanıcıdan alır(x-means de kullanıcıdan almadan ki hali
+o da k değerini yani x deneyerek tek tek 0 1 2 diye bakarak bulur)
+
+*rastegele k kadar  küme orta noktası seçiliyor(varyasonu bir birinden en uzak iki nokta seçme)
+
+*tüm noktalar kendisine en yakın noktaya atanıyor
+
+*sonra nokta alınan verilerin agırlık merkezine ortasına geliyor
+
+*noktalar yeni yerlerinde yeniden verileri yakınlıklarına göre ayrışıyorlar
+
+*böyle devam ediyor ta ki kararlı bir hal alana kadar(ağırlık merkezi değişmez ise,noktalar bir önceki ile aynı kümede ise,maximum yenileme değerine ulşaınca durur)
+
+
+*kümelerin bir birine uzaklıgı max
+
+*küme elemanlarının birbirine yakınlıgı min
+
+olma durumu modelin başarı ölçütü
+
+
+
+** kötü yanı kmeans in
+   
+
+   #kötü başlangıç noktası 
+   modeli daha kötü bir sonuca 
+   götürebilir
+   #rastegele algoritmaların 
+   kötü sonuç verme sıkıntıları    
+   vardır
+   #bunun için çözüm k-means++
+
+1.2-)k-means++
+*rastgele noktalar konumlandırılır
+*her bir nokta kendine en uzagın en çok şansı olucak şekilde kendine gidicek yeni yeri seçer olaslık dahilinde
+
+
+WCSS(within-cluster sums of squares)
+*her bir kümenin orta noktasının her bir elemana olan uzaklıgının karelerinin toplamı
+
+ki+(elemanın orta noktaya uzaklıgı)i
+
+wcss de elbow(dirsek) point seçilir
+
+
+2-)Hieararchical Clusterin(hiyararşik bütümleme/kümeleme)
+
+*agglomertaive HC
+ #öncelikle her veri bir küme
+ #en yakınlar ikili kümeler 
+ oluşturur
+ #en yakın iki küme bir küme
+ #tek bir küme olana kadar devam
+
+*divisive HC
+ #agglomerative tersine bir küme 
+ tüm elemanları kapsıyarak 
+ başlıyor küçülerek gidiyor taki
+ her bir eleman bir küme olan 
+ kadar 
+
+***k değerine kadar devam ediyor
+ eğer k 1 ise ilk kümlemede duruyor gibi
+
+ HC değişenleri
+ metrik hangi tarz olmalı
+ (öklit mesafesi ?)
+
+ Referanslar
+ #kümelerin uzaklıkları neyi baz 
+ alarak ölçülücek
+ (en yakın noktalar ? ortalma ? 
+  en uzak noktalar? merkezler 
+  arası mesafe_)
+ #wards metodu bir de var
+ küme 1 ve küme2 wcss si 
+ hesaplanıyor ardından küme 1 v 
+ küme 2 yeni küme oluşturup wcss 
+ hesaplanır ve tüm wcss toplamı
+ ward mesafesi oluyor
+
+dendogram
+
+depends = duruma bağlı
+
+

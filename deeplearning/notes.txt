@@ -1,0 +1,63 @@
+--------------------------------Deeplearning
+--------------------------------
+*veri normalize edilmeli 
+
+*çıkışta 0 1 aralıgında olur 
+
+*bir den fazla çıktı verilebilir 
+
+
+toplam(w.i*x.i)
+
+aktivasyon fonksionu
+  #threshold func(step 
+  func),sigmoid func,rectifier 
+  func(max(x,0) max olan 
+  kazanır),hiperbolik 
+  tanjant(-1,1),
+   
+*nöronlar ayrı ayrı aktivasyon function alabilir bir sinir agında 
+
+*linearly seperable = dogrusal ayrılabilen
+
+*perceptron = algılayıcı
+
+*gradiant discent (gradyan iniş)
+
+* (birden fazla nokta olması)-tek bir değerden direk değer degiştiren
+
+*batch(yıgın)-tüm veriden sonra değiştiren
+
+*mini batch(yıgın)-tüm verilerin aksine daha küçük veri gruplarından sonra geri dönüt yapması
+
+*propagation=yayılım
+
+adım1:
+0,1 arası 0 dahil degil şekilde tüm w leri initialization ediyoruz
+
+adım2: feature kadar giriş katmanı lazım
+#dummy varabile burada sökmez
+
+adım3: veri verilir ve bir çıktı alınır
+
+adım4: gerçek ve çıktı ile error hesaplanır
+
+adım5: her sinapsis hataya etkisi kadar agırlıgı degiştirilir 
+
+adım 6 :Tekrar(batch ve stochastic) a göre
+
+adım7 : tüm veri seti bitince yeniden tüm veri seti tekrarı
+
+*learning rate,epoc(çağ) sayisi,bias bizim verdigimiz parametleri 
+
+*lib:
+keras: tensorflowun üst katmanı
+tensorflow:google
+caffe:
+pytorch: facebook labin
+deeplearing4j: java için
+
+
+theano: matematik işlemlerini cpu degilde gpu üzerinden yapmaya yarıyor
+
+unic=benzersiz(veride böyle şeyler istemeyiz id tc kimlik gibi)

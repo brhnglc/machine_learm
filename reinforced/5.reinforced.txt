@@ -1,0 +1,17 @@
+-------------------------------Reinforced Learining
+-------------------------------
+*takviyeli/pekiştirmeli ögrenme
+*tanımlanmış bir hedef için modelin kendini iyileştirmesi
+*ödüllendirme cezalandırma sistemi ile 
+*alpgo(go oyunu) insanaa karşı oynasa hem çok kez oynicak biri yok hemde insan kadar iyi olucak ondan dolayı kendi kendine oynattılar
+
+Reinforced =güçlendirilmiş
+
+1-) UCB(upper confidence bound)(üst güven(itimat) sınırı)
+ 
+*random selection(rastegele seçiyor modeli ölçmek için bu algoyla karşılaştırıyoruz) dumb model
+*base linemiz bunu geçmek hedef
+
+2-) Thompson örneklemesi(sampling)
+#beta dağılımı 
+
